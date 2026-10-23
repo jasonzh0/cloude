@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TinyliciousClient } from "@fluidframework/tinylicious-client";
 import { SharedMap } from "fluid-framework";
+import { Buffer } from "buffer";
 
 import logo from "../assets/logo.png";
 
