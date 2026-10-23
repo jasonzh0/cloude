@@ -1,7 +1,12 @@
 module.exports = {
-    style: {
-        postcss: {
-            plugins: [require("tailwindcss"), require("autoprefixer")],
+    webpack: {
+        configure: {
+            resolve: {
+                fallback: {
+                    url: require.resolve("url/"),
+                    querystring: require.resolve("querystring-es3"),
+                },
+            },
         },
     },
 };
